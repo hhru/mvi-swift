@@ -1,5 +1,5 @@
 import Foundation
-import Combine
+import OpenCombine
 
 public protocol BindableFeature { }
 

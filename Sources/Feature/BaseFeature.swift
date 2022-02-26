@@ -1,5 +1,5 @@
 import Foundation
-import Combine
+import OpenCombine
 
 // swiftlint:disable generic_type_name
 open class BaseFeature<

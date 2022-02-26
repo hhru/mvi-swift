@@ -1,4 +1,4 @@
-import Combine
+import OpenCombine
 
 public protocol Store: AnyObject {
     associatedtype State: FeatureState

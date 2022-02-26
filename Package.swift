@@ -14,6 +14,12 @@ let package = Package(
             targets: ["MVISwift"]
         )
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/iosheadhunter/OpenCombine.git",
+            .branch("master")
+        )
+    ],
     targets: [
         .target(
             name: "MVISwift",

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OpenCombine",
+        "repositoryURL": "https://github.com/iosheadhunter/OpenCombine.git",
+        "state": {
+          "branch": "master",
+          "revision": "cb194b9dc63ab085f705fb5858183a10855806b2",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

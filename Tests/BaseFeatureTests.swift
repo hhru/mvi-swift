@@ -1,8 +1,8 @@
 import Foundation
 import XCTest
-import Combine
+import OpenCombine
 
-@testable import MVISwift_iOS
+@testable import MVISwift
 
 final class BaseFeatureTests: XCTestCase {
 

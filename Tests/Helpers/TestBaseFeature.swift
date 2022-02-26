@@ -1,7 +1,8 @@
 import Foundation
-import Combine
+import OpenCombine
+import OpenCombineDispatch
 
-@testable import MVISwift_iOS
+@testable import MVISwift
 
 enum TestFeatureConstants {
     static let initialState = TestState()
@@ -81,7 +82,7 @@ final class TestActor: Actor {
         let action: TestAction
     }
 
-    let scheduler = DispatchQueue.test
+    let scheduler = DispatchQueue.OCombine.testScheduler
     var invocationLog: [Log] = []
 
     func process(state: TestState, action: TestAction) -> AnyPublisher<TestEffect, Never> {

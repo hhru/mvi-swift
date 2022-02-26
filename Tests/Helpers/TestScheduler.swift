@@ -1,6 +1,5 @@
-import Combine
 import Foundation
-
+import OpenCombine
 /// A scheduler whose current time and execution can be controlled in a deterministic manner.
 ///
 /// This scheduler is useful for testing how the flow of time effects publishers that use
@@ -25,7 +24,7 @@ import Foundation
 /// To do this we can create a test scheduler and create two futures, one that emits after a
 /// second and one that emits after two seconds:
 ///
-///     let scheduler = DispatchQueue.test
+///     let scheduler = DispatchQueue.testScheduler
 ///     let first = Future<Int, Never> { callback in
 ///       scheduler.schedule(after: scheduler.now.advanced(by: 1)) { callback(.success(1)) }
 ///     }
@@ -84,9 +83,9 @@ where SchedulerTimeType: Strideable, SchedulerTimeType.Stride: SchedulerTimeInte
             guard
                 let nextDate = self.scheduled.first?.date,
                 finalDate >= nextDate
-            else {
-                self.now = finalDate
-                return
+                else {
+                    self.now = finalDate
+                    return
             }
 
             self.now = nextDate
@@ -104,9 +103,8 @@ where SchedulerTimeType: Strideable, SchedulerTimeType.Stride: SchedulerTimeInte
     /// and does not run forever. For example, the following code will run an infinite loop forever
     /// because the timer never finishes:
     ///
-    ///     let scheduler = DispatchQueue.test
+    ///     let scheduler = DispatchQueue.testScheduler
     ///     Publishers.Timer(every: .seconds(1), scheduler: scheduler)
-    ///       .autoconnect()
     ///       .sink { _ in print($0) }
     ///       .store(in: &cancellables)
     ///
@@ -116,9 +114,8 @@ where SchedulerTimeType: Strideable, SchedulerTimeType.Stride: SchedulerTimeInte
     /// chain on another operator that completes it when a certain condition is met. This can be
     /// done in many ways, such as using `prefix`:
     ///
-    ///     let scheduler = DispatchQueue.test
+    ///     let scheduler = DispatchQueue.testScheduler
     ///     Publishers.Timer(every: .seconds(1), scheduler: scheduler)
-    ///       .autoconnect()
     ///       .prefix(3)
     ///       .sink { _ in print($0) }
     ///       .store(in: &cancellables)
@@ -174,30 +171,12 @@ where SchedulerTimeType: Strideable, SchedulerTimeType.Stride: SchedulerTimeInte
     }
 }
 
-public extension DispatchQueue {
+extension Scheduler where
+    SchedulerTimeType == DispatchQueue.OCombine.SchedulerTimeType,
+    SchedulerOptions == DispatchQueue.OCombine.SchedulerOptions {
     /// A test scheduler of dispatch queues.
-    static var test: TestSchedulerOf<DispatchQueue> {
+    public static var testScheduler: TestScheduler<SchedulerTimeType, SchedulerOptions> {
         // NB: `DispatchTime(uptimeNanoseconds: 0) == .now())`. Use `1` for consistency.
-        .init(now: .init(.init(uptimeNanoseconds: 1)))
+        TestScheduler(now: SchedulerTimeType(DispatchTime(uptimeNanoseconds: 1)))
     }
 }
-
-public extension OperationQueue {
-    /// A test scheduler of operation queues.
-    static var test: TestSchedulerOf<OperationQueue> {
-        .init(now: .init(.init(timeIntervalSince1970: 0)))
-    }
-}
-
-public extension RunLoop {
-    /// A test scheduler of run loops.
-    static var test: TestSchedulerOf<RunLoop> {
-        .init(now: .init(.init(timeIntervalSince1970: 0)))
-    }
-}
-
-/// A convenience type to specify a `TestScheduler` by the scheduler it wraps rather than by the
-/// time type and options type.
-public typealias TestSchedulerOf<Scheduler> = TestScheduler<
-    Scheduler.SchedulerTimeType, Scheduler.SchedulerOptions
-> where Scheduler: Combine.Scheduler

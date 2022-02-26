@@ -1,4 +1,4 @@
-import Combine
+import OpenCombine
 
 public protocol Feature: Store {
     associatedtype News

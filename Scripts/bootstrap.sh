@@ -25,4 +25,6 @@ readonly bootstrap_path="${script_path}/Bootstrap"
 "${bootstrap_path}/mint.sh" --update
 "${bootstrap_path}/mintfile.sh"
 
+"${bootstrap_path}/cartfile.sh"
+
 "${bootstrap_path}/congratulations.sh"

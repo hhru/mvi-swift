@@ -1,4 +1,4 @@
-import Combine
+import OpenCombine
 
 public struct BypassActor<State: Equatable, Action>: Actor {
 

@@ -1,4 +1,4 @@
-import Combine
+import OpenCombine
 
 public struct DefaultBootstrapper<Action>: Bootstrapper {
 
