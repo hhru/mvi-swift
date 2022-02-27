@@ -117,7 +117,7 @@ To install it, run these commands in a terminal:
 
 ``` sh
 $ git clone https://github.com/hhru/mvi-swift.git
-$ cd /Example
+$ cd /Example/MVISwiftExample
 $ pod install
 $ open MVISwiftExample.xcworkspace
 ```

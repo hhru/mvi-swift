@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC2818AB27C65FBD00223646 /* MVISwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2818A027C65FBD00223646 /* MVISwift_iOS.framework */; };
+		DC2818AB27C65FBD00223646 /* MVISwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2818A027C65FBD00223646 /* MVISwift.framework */; };
 		DC2818EF27C6658A00223646 /* BaseFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2818E827C6657200223646 /* BaseFeatureTests.swift */; };
 		DC2818F027C6658E00223646 /* TestScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2818EB27C6657200223646 /* TestScheduler.swift */; };
 		DC2818F127C6658E00223646 /* TestBaseFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2818EA27C6657200223646 /* TestBaseFeature.swift */; };
@@ -75,7 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC2818A027C65FBD00223646 /* MVISwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVISwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC2818A027C65FBD00223646 /* MVISwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVISwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2818AA27C65FBD00223646 /* MVISwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVISwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2818BC27C663B300223646 /* MVISwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVISwift.h; sourceTree = "<group>"; };
 		DC2818E827C6657200223646 /* BaseFeatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFeatureTests.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2818AB27C65FBD00223646 /* MVISwift_iOS.framework in Frameworks */,
+				DC2818AB27C65FBD00223646 /* MVISwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +156,7 @@
 		DC2818A127C65FBD00223646 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC2818A027C65FBD00223646 /* MVISwift_iOS.framework */,
+				DC2818A027C65FBD00223646 /* MVISwift.framework */,
 				DC2818AA27C65FBD00223646 /* MVISwiftTests.xctest */,
 				DC2818FC27C66ADA00223646 /* MVISwift_tvOS.framework */,
 				DC28190327C66ADB00223646 /* MVISwift tvOSTests.xctest */,
@@ -286,9 +286,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DC28189F27C65FBD00223646 /* MVISwift iOS */ = {
+		DC28189F27C65FBD00223646 /* MVISwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC2818B427C65FBE00223646 /* Build configuration list for PBXNativeTarget "MVISwift iOS" */;
+			buildConfigurationList = DC2818B427C65FBE00223646 /* Build configuration list for PBXNativeTarget "MVISwift" */;
 			buildPhases = (
 				DC28192927C66C5100223646 /* SwiftLint */,
 				DC28189B27C65FBD00223646 /* Headers */,
@@ -300,9 +300,9 @@
 			);
 			dependencies = (
 			);
-			name = "MVISwift iOS";
+			name = MVISwift;
 			productName = MVISwift;
-			productReference = DC2818A027C65FBD00223646 /* MVISwift_iOS.framework */;
+			productReference = DC2818A027C65FBD00223646 /* MVISwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DC2818A927C65FBD00223646 /* MVISwiftTests */ = {
@@ -396,7 +396,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC28189F27C65FBD00223646 /* MVISwift iOS */,
+				DC28189F27C65FBD00223646 /* MVISwift */,
 				DC2818FB27C66ADA00223646 /* MVISwift tvOS */,
 				DC2818A927C65FBD00223646 /* MVISwiftTests */,
 				DC28190227C66ADB00223646 /* MVISwift tvOSTests */,
@@ -533,7 +533,7 @@
 /* Begin PBXTargetDependency section */
 		DC2818AD27C65FBD00223646 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC28189F27C65FBD00223646 /* MVISwift iOS */;
+			target = DC28189F27C65FBD00223646 /* MVISwift */;
 			targetProxy = DC2818AC27C65FBD00223646 /* PBXContainerItemProxy */;
 		};
 		DC28190627C66ADB00223646 /* PBXTargetDependency */ = {
@@ -880,7 +880,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC2818B427C65FBE00223646 /* Build configuration list for PBXNativeTarget "MVISwift iOS" */ = {
+		DC2818B427C65FBE00223646 /* Build configuration list for PBXNativeTarget "MVISwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC2818B527C65FBE00223646 /* Debug */,

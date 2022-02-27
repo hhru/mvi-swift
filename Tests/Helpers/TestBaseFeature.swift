@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-@testable import MVISwift_iOS
+@testable import MVISwift
 
 enum TestFeatureConstants {
     static let initialState = TestState()

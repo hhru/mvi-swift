@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC28189F27C65FBD00223646"
                BuildableName = "MVISwift_iOS.framework"
-               BlueprintName = "MVISwift iOS"
+               BlueprintName = "MVISwift"
                ReferencedContainer = "container:MVISwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -62,7 +62,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC28189F27C65FBD00223646"
             BuildableName = "MVISwift_iOS.framework"
-            BlueprintName = "MVISwift iOS"
+            BlueprintName = "MVISwift"
             ReferencedContainer = "container:MVISwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

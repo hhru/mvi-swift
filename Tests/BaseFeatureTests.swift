@@ -2,7 +2,7 @@ import Foundation
 import XCTest
 import Combine
 
-@testable import MVISwift_iOS
+@testable import MVISwift
 
 final class BaseFeatureTests: XCTestCase {
 

@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39480825B72488075A47B051 /* Pods_MVISwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA672A2F874DEEABC4219FC3 /* Pods_MVISwiftExample.framework */; };
+		DC36043227CB5D7500BFB099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36043127CB5D7500BFB099 /* AppDelegate.swift */; };
+		DC36043B27CB5D7900BFB099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC36043A27CB5D7900BFB099 /* Assets.xcassets */; };
+		DC36043E27CB5D7900BFB099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC36043C27CB5D7900BFB099 /* LaunchScreen.storyboard */; };
+		DC36045127CB5DFB00BFB099 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36044527CB5DFB00BFB099 /* CounterViewController.swift */; };
+		DC36045227CB5DFB00BFB099 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36044827CB5DFB00BFB099 /* CounterReducer.swift */; };
+		DC36045327CB5DFB00BFB099 /* CounterEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36044927CB5DFB00BFB099 /* CounterEffect.swift */; };
+		DC36045427CB5DFB00BFB099 /* CounterNewsPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36044A27CB5DFB00BFB099 /* CounterNewsPublisher.swift */; };
+		DC36045527CB5DFB00BFB099 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36044B27CB5DFB00BFB099 /* CounterState.swift */; };
+		DC36045627CB5DFB00BFB099 /* CounterWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36044C27CB5DFB00BFB099 /* CounterWish.swift */; };
+		DC36045727CB5DFB00BFB099 /* CounterActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36044D27CB5DFB00BFB099 /* CounterActor.swift */; };
+		DC36045827CB5DFB00BFB099 /* CounterPostProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36044E27CB5DFB00BFB099 /* CounterPostProcessor.swift */; };
+		DC36045927CB5DFB00BFB099 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36045027CB5DFB00BFB099 /* CounterFeature.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		959BDC1215B8534AD3B7DCEE /* Pods-MVISwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVISwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-MVISwiftExample/Pods-MVISwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		CA672A2F874DEEABC4219FC3 /* Pods_MVISwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVISwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC36042E27CB5D7500BFB099 /* MVISwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVISwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC36043127CB5D7500BFB099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC36043A27CB5D7900BFB099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC36043D27CB5D7900BFB099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC36043F27CB5D7900BFB099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC36044527CB5DFB00BFB099 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		DC36044827CB5DFB00BFB099 /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		DC36044927CB5DFB00BFB099 /* CounterEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterEffect.swift; sourceTree = "<group>"; };
+		DC36044A27CB5DFB00BFB099 /* CounterNewsPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterNewsPublisher.swift; sourceTree = "<group>"; };
+		DC36044B27CB5DFB00BFB099 /* CounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		DC36044C27CB5DFB00BFB099 /* CounterWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterWish.swift; sourceTree = "<group>"; };
+		DC36044D27CB5DFB00BFB099 /* CounterActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterActor.swift; sourceTree = "<group>"; };
+		DC36044E27CB5DFB00BFB099 /* CounterPostProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterPostProcessor.swift; sourceTree = "<group>"; };
+		DC36045027CB5DFB00BFB099 /* CounterFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		E3BF0D7A8CCFB22D9904268A /* Pods-MVISwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVISwiftExample.release.xcconfig"; path = "Target Support Files/Pods-MVISwiftExample/Pods-MVISwiftExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC36042B27CB5D7500BFB099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39480825B72488075A47B051 /* Pods_MVISwiftExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		484FCE883586960202638DFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA672A2F874DEEABC4219FC3 /* Pods_MVISwiftExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C0EBE5579B94241D16446FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				959BDC1215B8534AD3B7DCEE /* Pods-MVISwiftExample.debug.xcconfig */,
+				E3BF0D7A8CCFB22D9904268A /* Pods-MVISwiftExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC36042527CB5D7500BFB099 = {
+			isa = PBXGroup;
+			children = (
+				DC36043027CB5D7500BFB099 /* MVISwiftExample */,
+				DC36042F27CB5D7500BFB099 /* Products */,
+				4C0EBE5579B94241D16446FA /* Pods */,
+				484FCE883586960202638DFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC36042F27CB5D7500BFB099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC36042E27CB5D7500BFB099 /* MVISwiftExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC36043027CB5D7500BFB099 /* MVISwiftExample */ = {
+			isa = PBXGroup;
+			children = (
+				DC36044627CB5DFB00BFB099 /* MVI */,
+				DC36044527CB5DFB00BFB099 /* CounterViewController.swift */,
+				DC36043127CB5D7500BFB099 /* AppDelegate.swift */,
+				DC36043A27CB5D7900BFB099 /* Assets.xcassets */,
+				DC36043C27CB5D7900BFB099 /* LaunchScreen.storyboard */,
+				DC36043F27CB5D7900BFB099 /* Info.plist */,
+			);
+			path = MVISwiftExample;
+			sourceTree = "<group>";
+		};
+		DC36044627CB5DFB00BFB099 /* MVI */ = {
+			isa = PBXGroup;
+			children = (
+				DC36044727CB5DFB00BFB099 /* Element */,
+				DC36044F27CB5DFB00BFB099 /* Feature */,
+			);
+			path = MVI;
+			sourceTree = "<group>";
+		};
+		DC36044727CB5DFB00BFB099 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				DC36044827CB5DFB00BFB099 /* CounterReducer.swift */,
+				DC36044927CB5DFB00BFB099 /* CounterEffect.swift */,
+				DC36044A27CB5DFB00BFB099 /* CounterNewsPublisher.swift */,
+				DC36044B27CB5DFB00BFB099 /* CounterState.swift */,
+				DC36044C27CB5DFB00BFB099 /* CounterWish.swift */,
+				DC36044D27CB5DFB00BFB099 /* CounterActor.swift */,
+				DC36044E27CB5DFB00BFB099 /* CounterPostProcessor.swift */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		DC36044F27CB5DFB00BFB099 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				DC36045027CB5DFB00BFB099 /* CounterFeature.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC36042D27CB5D7500BFB099 /* MVISwiftExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC36044227CB5D7900BFB099 /* Build configuration list for PBXNativeTarget "MVISwiftExample" */;
+			buildPhases = (
+				171C3D8F06751607264A39FA /* [CP] Check Pods Manifest.lock */,
+				DC36042A27CB5D7500BFB099 /* Sources */,
+				DC36042B27CB5D7500BFB099 /* Frameworks */,
+				DC36042C27CB5D7500BFB099 /* Resources */,
+				4FD2EE76798A42E43278F0AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVISwiftExample;
+			productName = MVISwiftExample;
+			productReference = DC36042E27CB5D7500BFB099 /* MVISwiftExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC36042627CB5D7500BFB099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					DC36042D27CB5D7500BFB099 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = DC36042927CB5D7500BFB099 /* Build configuration list for PBXProject "MVISwiftExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC36042527CB5D7500BFB099;
+			productRefGroup = DC36042F27CB5D7500BFB099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC36042D27CB5D7500BFB099 /* MVISwiftExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC36042C27CB5D7500BFB099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC36043E27CB5D7900BFB099 /* LaunchScreen.storyboard in Resources */,
+				DC36043B27CB5D7900BFB099 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		171C3D8F06751607264A39FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVISwiftExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FD2EE76798A42E43278F0AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVISwiftExample/Pods-MVISwiftExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVISwiftExample/Pods-MVISwiftExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVISwiftExample/Pods-MVISwiftExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC36042A27CB5D7500BFB099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC36045527CB5DFB00BFB099 /* CounterState.swift in Sources */,
+				DC36043227CB5D7500BFB099 /* AppDelegate.swift in Sources */,
+				DC36045227CB5DFB00BFB099 /* CounterReducer.swift in Sources */,
+				DC36045927CB5DFB00BFB099 /* CounterFeature.swift in Sources */,
+				DC36045627CB5DFB00BFB099 /* CounterWish.swift in Sources */,
+				DC36045127CB5DFB00BFB099 /* CounterViewController.swift in Sources */,
+				DC36045427CB5DFB00BFB099 /* CounterNewsPublisher.swift in Sources */,
+				DC36045727CB5DFB00BFB099 /* CounterActor.swift in Sources */,
+				DC36045327CB5DFB00BFB099 /* CounterEffect.swift in Sources */,
+				DC36045827CB5DFB00BFB099 /* CounterPostProcessor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC36043C27CB5D7900BFB099 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC36043D27CB5D7900BFB099 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC36044027CB5D7900BFB099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC36044127CB5D7900BFB099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC36044327CB5D7900BFB099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959BDC1215B8534AD3B7DCEE /* Pods-MVISwiftExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVISwiftExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.hh.MVISwiftExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC36044427CB5D7900BFB099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BF0D7A8CCFB22D9904268A /* Pods-MVISwiftExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVISwiftExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.hh.MVISwiftExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC36042927CB5D7500BFB099 /* Build configuration list for PBXProject "MVISwiftExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC36044027CB5D7900BFB099 /* Debug */,
+				DC36044127CB5D7900BFB099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC36044227CB5D7900BFB099 /* Build configuration list for PBXNativeTarget "MVISwiftExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC36044327CB5D7900BFB099 /* Debug */,
+				DC36044427CB5D7900BFB099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC36042627CB5D7500BFB099 /* Project object */;
+}
