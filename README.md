@@ -102,14 +102,21 @@ let package = Package(
 
 [API Documentation](http://tech.hh.ru/mvi-swift/)
 
-### Quick Start
+### Xcode Templates
 
+For convenient creation of new files, the project provides a set of Xcode templates,
+which are located in the [XcodeTemplates](XcodeTemplates) folder.
 
-``` swift
-// TODO: -
+To install Xcode templates, you need to run [installation script](XcodeTemplates/install.sh):
+
+``` sh
+./XcodeTemplates/install.sh
 ```
 
+After executing the script, the templates will be available in the menu for creating new files ('File -> New -> File...').
+
 ### Example App
+
 [Example app](Example) is a simple iOS and tvOS app that demonstrates how MVISwift works in practice.
 It's also a good place to start playing with the framework.
 
