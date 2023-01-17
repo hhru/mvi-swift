@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.author = { "Alex Tsybulko" => "working.tsybulko@gmail.com" }
   spec.source = { :git => "https://github.com/hhru/mvi-swift.git", :tag => "#{spec.version}" }
 
-  spec.swift_version = '5.5'
+  spec.swift_version = '5.7'
   spec.requires_arc = true
   spec.source_files = 'Sources/**/*.swift'
 

@@ -33,6 +33,7 @@ class CounterActor: Actor {
         switch action {
         case .increaseCounter:
             return .just(.add(1))
+
         case .decreaseCounter:
             return .just(.substract(1))
         }

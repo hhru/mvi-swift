@@ -9,6 +9,7 @@ class CounterViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -27,7 +28,7 @@ class CounterViewController: UIViewController {
 
         feature.accept(.increaseCounter)
         print(feature.state.value)
-        
+
         feature.accept(.decreaseCounter)
         print(feature.state.value)
     }
