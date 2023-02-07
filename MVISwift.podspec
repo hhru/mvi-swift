@@ -17,4 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.tvos.frameworks = 'Combine'
   spec.tvos.deployment_target = "13.0"
+
+  # https://github.com/CocoaPods/CocoaPods/issues/11547#issuecomment-1350518586
+  spec.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
 end
