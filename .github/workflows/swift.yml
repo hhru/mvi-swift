@@ -20,7 +20,7 @@ jobs:
     env:
       DEVELOPER_DIR: /Applications/Xcode_14.0.1.app/Contents/Developer
       XCODE_PROJECT: MVISwift.xcodeproj
-      IOS_SCHEME: MVISwift iOS
+      IOS_SCHEME: MVISwift
       IOS_DESTINATION: OS=16.0,name=iPhone 14
       IOS_RESULT_PATH: xcodebuild-ios.xcresult
       TVOS_SCHEME: MVISwift tvOS

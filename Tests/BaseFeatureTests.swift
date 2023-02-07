@@ -2,7 +2,11 @@ import Foundation
 import XCTest
 import Combine
 
+#if canImport(MVISwift)
 @testable import MVISwift
+#elseif canImport(MVISwift_tvOS)
+@testable import MVISwift_tvOS
+#endif
 
 final class BaseFeatureTests: XCTestCase {
 
