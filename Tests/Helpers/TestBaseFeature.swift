@@ -1,7 +1,11 @@
 import Foundation
 import Combine
 
+#if canImport(MVISwift)
 @testable import MVISwift
+#elseif canImport(MVISwift_tvOS)
+@testable import MVISwift_tvOS
+#endif
 
 enum TestFeatureConstants {
     static let initialState = TestState()

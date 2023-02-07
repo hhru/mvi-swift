@@ -6,6 +6,7 @@ struct CounterReducer: Reducer {
         switch effect {
         case .add(let number):
             return CounterState(counter: state.counter + number)
+
         case .substract(let number):
             return CounterState(counter: state.counter - number)
         }
