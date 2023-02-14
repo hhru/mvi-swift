@@ -1,10 +1,8 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '13.0'
+inhibit_all_warnings!
 
 target 'MVISwiftExample' do
-  # Comment the next line if you don't want to use dynamic frameworks
+  platform :ios, '13.0'
   use_frameworks!
 
-  pod 'MVISwift', '~>1.0.0-alpha.1'
-
+  pod 'MVISwift', :path => "../.."
 end
