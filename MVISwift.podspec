@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "MVISwift"
-  spec.version = "1.0.1"
+  spec.version = "1.0.2"
   spec.summary = "MVISwift is a modern, Swift-based MVI framework with Combine"
 
   spec.homepage = "https://github.com/hhru/mvi-swift"
