@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol Reducer {
+public protocol Reducer: Sendable {
     associatedtype State: Equatable
     associatedtype Effect
 

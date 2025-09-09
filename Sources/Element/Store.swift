@@ -1,6 +1,6 @@
 import Combine
 
-public protocol Store: AnyObject {
+public protocol Store: AnyObject, Sendable {
     associatedtype State: FeatureState
     associatedtype Wish
 

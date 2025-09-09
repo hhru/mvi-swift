@@ -1,6 +1,6 @@
 import Combine
 
-public struct DefaultBootstrapper<Action>: Bootstrapper {
+public struct DefaultBootstrapper<Action: Sendable>: Bootstrapper {
 
     public let actions: [Action]
 

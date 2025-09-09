@@ -1,4 +1,4 @@
-public protocol NewsPublisher {
+public protocol NewsPublisher: Sendable {
     associatedtype State: Equatable
     associatedtype Action
     associatedtype Effect

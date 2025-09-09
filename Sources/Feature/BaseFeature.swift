@@ -1,5 +1,5 @@
+@preconcurrency import Combine
 import Foundation
-import Combine
 
 // swiftlint:disable generic_type_name
 open class BaseFeature<
@@ -7,11 +7,11 @@ open class BaseFeature<
     Wish,
     B: Bootstrapper,
     WTA: WishToAction,
-    A: Actor,
+    A: Actor & Sendable,
     R: Reducer,
     PP: PostProcessor,
     NP: NewsPublisher
->: Feature where
+>: @unchecked Sendable, Feature where
     State == R.State,
     State == A.State,
     State == PP.State,
@@ -45,7 +45,7 @@ open class BaseFeature<
 
     // MARK: - Public variables
 
-    public var cancellableBag = Set<AnyCancellable>()
+    public let cancellableBag = MVICancellableBag()
 
     public var news: AnyPublisher<NP.News, Never> {
         newsSubject
@@ -86,14 +86,14 @@ open class BaseFeature<
 
                 self.invokeActor(state: self.stateSubject.value, action: action)
             }
-            .store(in: &cancellableBag)
+            .store(in: self.cancellableBag)
 
         bootstrapper?
             .bootstrap()
             .sink { [weak self] action in
                 self?.actionSubject.send(action)
             }
-            .store(in: &cancellableBag)
+            .store(in: self.cancellableBag)
     }
 
     // MARK: - Public methods
@@ -115,7 +115,7 @@ open class BaseFeature<
 
                 self.invokeReducer(state: self.stateSubject.value, action: action, effect: effect)
             }
-            .store(in: &cancellableBag)
+            .store(in: self.cancellableBag)
     }
 
     private func invokeReducer(state: State, action: Action, effect: Effect) {
