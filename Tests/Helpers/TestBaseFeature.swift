@@ -78,7 +78,7 @@ enum TestNews {
     case loopback
 }
 
-final class TestActor: Actor {
+final class TestActor: Actor, @unchecked Sendable {
 
     struct Log: Equatable {
         let state: TestState
