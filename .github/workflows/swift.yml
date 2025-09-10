@@ -20,10 +20,10 @@ jobs:
       DEVELOPER_DIR: /Applications/Xcode_16.4.app
       XCODE_PROJECT: MVISwift.xcodeproj
       IOS_SCHEME: MVISwift
-      IOS_DESTINATION: OS=18.0,name=iPhone 16
+      IOS_DESTINATION: OS=18.5,name=iPhone 16
       IOS_RESULT_PATH: xcodebuild-ios.xcresult
       TVOS_SCHEME: MVISwift tvOS
-      TVOS_DESTINATION: OS=18.0,name=Apple TV
+      TVOS_DESTINATION: OS=18.5,name=Apple TV
       TVOS_RESULT_PATH: xcodebuild-tvos.xcresult
       SKIP_SWIFTLINT: YES
       SWIFTLINT_VERSION: 0.54.0
