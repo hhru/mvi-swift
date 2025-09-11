@@ -295,7 +295,7 @@ final class BaseFeatureTests: XCTestCase {
 
         // when
         wishes.forEach(feature.accept)
-        
+
         feature = nil
 
         // then

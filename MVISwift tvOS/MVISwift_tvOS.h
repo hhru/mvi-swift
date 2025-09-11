@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MVISwift.h"
 
 //! Project version number for MVISwift_tvOS.
 FOUNDATION_EXPORT double MVISwift_tvOSVersionNumber;
