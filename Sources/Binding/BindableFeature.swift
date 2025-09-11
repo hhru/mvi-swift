@@ -10,6 +10,6 @@ extension BindableFeature where Self: Feature {
             .sink { [weak self] wish in
                 self?.accept(wish)
             }
-            .store(in: &cancellableBag)
+            .store(in: cancellableBag)
     }
 }

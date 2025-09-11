@@ -1,6 +1,6 @@
 import Combine
 
-public struct BypassActor<State: Equatable, Action>: Actor {
+public struct BypassActor<State: Equatable, Action>: Actor, Sendable {
 
     public init() { }
 

@@ -1,8 +1,8 @@
-public struct ClosureWishToAction<Wish, Action>: WishToAction {
+public struct ClosureWishToAction<Wish, Action>: WishToAction, Sendable {
 
-    private var wishToAction: (Wish) -> Action
+    private var wishToAction: @Sendable (Wish) -> Action
 
-    public init(_ wishToAction: @escaping (Wish) -> Action) {
+    public init(_ wishToAction: @Sendable @escaping (Wish) -> Action) {
         self.wishToAction = wishToAction
     }
 
@@ -13,10 +13,10 @@ public struct ClosureWishToAction<Wish, Action>: WishToAction {
 
 extension BaseFeature where WTA == ClosureWishToAction<Wish, A.Action> {
 
-    public convenience init(
+    internal convenience init(
         initialState: State,
         bootstrapper: B? = nil,
-        wishToAction: @escaping (Wish) -> A.Action,
+        wishToAction: @Sendable @escaping (Wish) -> A.Action,
         actor: A,
         reducer: R,
         postProcessor: PP? = nil,

@@ -1,4 +1,4 @@
-public protocol PostProcessor {
+public protocol PostProcessor: Sendable {
     associatedtype State: Equatable
     associatedtype Action
     associatedtype Effect

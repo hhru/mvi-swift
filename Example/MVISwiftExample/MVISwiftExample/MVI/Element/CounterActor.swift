@@ -27,7 +27,7 @@ extension AnyPublisher {
     }
 }
 
-class CounterActor: Actor {
+final class CounterActor: Actor {
 
     func process(state: CounterState, action: CounterAction) -> AnyPublisher<CounterEffect, Never> {
         switch action {

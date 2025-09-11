@@ -9,7 +9,7 @@ final class CounterFeature: BaseFeature<
     CounterReducer,
     CounterPostProcessor,
     CounterNewsPublisher
-> {
+>, @unchecked Sendable {
 
     init() {
         super.init(

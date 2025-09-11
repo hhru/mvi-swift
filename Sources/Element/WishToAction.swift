@@ -1,4 +1,4 @@
-public protocol WishToAction {
+public protocol WishToAction: Sendable {
     associatedtype Wish
     associatedtype Action
 

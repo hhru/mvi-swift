@@ -1,6 +1,6 @@
 import Combine
 
-public protocol Actor {
+public protocol Actor: Sendable {
     associatedtype State: Equatable
     associatedtype Action
     associatedtype Effect
